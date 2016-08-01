@@ -8,7 +8,7 @@ Copyright 2011 ~ 2016 - Arith Hsu, Atlas Team <atlas.addon@gmail.com>
 = Change Log =
 ==============
 
-v1.33.01 (Jul. XX, 2016)
+v1.33.01 (Aug. 01, 2016)
 ------------------------
 - Update Icecrown Citadel mapA to add the info regarding to portal to Dalaran
 - Maps revamped:
