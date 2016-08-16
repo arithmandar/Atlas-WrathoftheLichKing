@@ -8,6 +8,11 @@ Copyright 2011 ~ 2016 - Arith Hsu, Atlas Team <atlas.addon@gmail.com>
 = Change Log =
 ==============
 
+v1.33.02 (Aug. 16, 2016)
+------------------------
+- Correct the boss ID of Sartharion in The Obsidian Sanctum
+
+
 v1.33.01 (Aug. 01, 2016)
 ------------------------
 - Update Icecrown Citadel mapA to add the info regarding to portal to Dalaran
