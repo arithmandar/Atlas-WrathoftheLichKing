@@ -29,7 +29,7 @@
 ## Notes: Wrath of the Lich King Dungeon Maps
 ## Notes-zhTW: 巫妖王之怒副本地圖模組
 #@end-debug@
-## Version: 1.39.00
+## Version: @project-version@
 ## Author: arith, Dynaletik, dubcat
 ## X-Date: @project-date-iso@
 ## X-Credits: Dan Gilbert, Lothaer
