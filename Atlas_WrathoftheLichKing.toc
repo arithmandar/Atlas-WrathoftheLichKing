@@ -39,5 +39,5 @@
 ## RequiredDeps: Atlas
 
 Locale\Locales.xml
-Atlas_WrathoftheLichKing.lua
-Atlas_WrathoftheLichKing_DB.lua
+Core.lua
+Data.lua
