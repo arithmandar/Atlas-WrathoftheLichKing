@@ -2605,6 +2605,7 @@ db.DropDownLayouts = {
 			"UlduarHallsofStone",		-- WrathoftheLichKing
 			"UtgardeKeep",			-- WrathoftheLichKing
 			"UtgardePinnacle",		-- WrathoftheLichKing
+			"VioletHold",			-- WrathoftheLichKing
 		},
 		[ATLAS_DDL_PARTYSIZE_10] = {
 			"TheEyeOfEternity",		-- WrathoftheLichKing
@@ -2647,6 +2648,7 @@ db.DropDownLayouts = {
 		[ATLAS_DDL_TYPE_INSTANCE] = {
 			"AhnKahet",			-- WrathoftheLichKing
 			"AzjolNerub",			-- WrathoftheLichKing
+			"CoTOldStratholme",		-- WrathoftheLichKing
 			"DrakTharonKeep",		-- WrathoftheLichKing
 			"TheEyeOfEternity",		-- WrathoftheLichKing
 			"FHHallsOfReflection",		-- WrathoftheLichKing
@@ -2674,6 +2676,7 @@ db.DropDownLayouts = {
 			"VaultOfArchavon",		-- WrathoftheLichKing
 			"TrialOfTheChampion",		-- WrathoftheLichKing
 			"TrialOfTheCrusader",		-- WrathoftheLichKing
+			"VioletHold",			-- WrathoftheLichKing
 		},
 		[ATLAS_DDL_TYPE_ENTRANCE] = {
 			"CavernsOfTimeEnt",		-- WrathoftheLichKing
