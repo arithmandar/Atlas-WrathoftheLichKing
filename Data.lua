@@ -2407,6 +2407,9 @@ db.OutdoorZoneToAtlas = {
 	[BZ["Borean Tundra"]] = 		"TheEyeOfEternity",
 	[BZ["The Storm Peaks"]] = 		"UlduarEnt",
 	[BZ["Dalaran"]] = 			"VioletHold",
+	[BZ["Howling Fjord"]] = 		"UtgardeKeep",
+	[BZ["Zul'Drak"]] = 			"Gundrak",
+	[BZ["The Storm Peaks"]] = 		"UlduarEnt",
 }
 
 -- Entrance maps to instance maps
