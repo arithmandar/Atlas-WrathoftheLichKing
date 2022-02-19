@@ -2104,8 +2104,7 @@ db.DropDownLayouts_Order = {
 		ATLAS_DDL_CONTINENT_NORTHREND,
 	},
 	[ATLAS_DDL_LEVEL] = {
-		ATLAS_DDL_LEVEL_70TO80,
-		ATLAS_DDL_LEVEL_80TO85,
+		ATLAS_DDL_LEVEL_10TO30,
 	},
 	[ATLAS_DDL_EXPANSION] = {
 		ATLAS_DDL_EXPANSION_WOTLK,
@@ -2192,7 +2191,7 @@ db.DropDownLayouts = {
 		},
 	},
 	[ATLAS_DDL_LEVEL] = {
-		[ATLAS_DDL_LEVEL_70TO80] = {
+		[ATLAS_DDL_LEVEL_10TO30] = {
 			"AhnKahet",			-- WrathoftheLichKing
 			"AzjolNerub",			-- WrathoftheLichKing
 			"CavernsOfTimeEnt",		
@@ -2216,8 +2215,6 @@ db.DropDownLayouts = {
 			"UtgardeKeep",			-- WrathoftheLichKing
 			"UtgardePinnacle",		-- WrathoftheLichKing
 			"VioletHold",			-- WrathoftheLichKing
-		},
-		[ATLAS_DDL_LEVEL_80TO85] = {
 			"IcecrownCitadelA",		-- WrathoftheLichKing
 			"IcecrownCitadelB",		-- WrathoftheLichKing
 			"IcecrownCitadelC",		-- WrathoftheLichKing
