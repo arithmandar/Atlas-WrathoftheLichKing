@@ -8,7 +8,7 @@ Copyright 2011 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 = Change Log =
 ==============
 
-v1.51.02 (Aug. xx, 2022)
+v1.51.02 (Aug. 22, 2022)
 ------------------------
 - Added support for classic server
 

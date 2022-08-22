@@ -7,6 +7,4 @@ manual-changelog:
 enable-nolib-creation: no
 
 ignore:
-    - Images/IcecrownCitadelA.psd
-    - Images/FHPitOfSaron.psd
-    - Images/FHTheForgeOfSouls.psd
+    - Images/PSD

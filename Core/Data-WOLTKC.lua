@@ -118,7 +118,7 @@ db.AtlasMaps = {
 		{ "Heroic: Azjol-Nerub", "ac=491" },
 		--{ "Heroic: Azjol-Nerub Guild Run", "ac=5097" },
 	},
-	CavernsOfTimeEnt = {
+	WL_CoTEnt = {
 		ZoneName = { BZ["Caverns of Time"]..ALC["L-Parenthesis"]..ALC["Entrance"]..ALC["R-Parenthesis"] },
 		Location = { BZ["Tanaris"] },
 		LevelRange = "66-85+",
@@ -131,10 +131,6 @@ db.AtlasMaps = {
 		{ BLUE.." C) "..BZ["Old Hillsbrad Foothills"], 10003 },
 		{ BLUE.." D) "..BZ["The Black Morass"], 10004 },
 		{ BLUE.." E) "..BZ["The Culling of Stratholme"], 10005 },
-		{ BLUE.." F) "..BZ["Dragon Soul"], 10006 },
-		{ BLUE.." G) "..BZ["End Time"], 10007 },
-		{ BLUE.." H) "..BZ["Well of Eternity"], 10008 },
-		{ BLUE.." I) "..BZ["Hour of Twilight"], 10009 },
 		{ GREN.." 1') "..L["Steward of Time <Keepers of Time>"], 10010 },
 		{ GREN.." 2') "..L["Alexston Chrome <Tavern of Time>"], 10011 },
 		{ GREN.." 3') "..L["Graveyard"], 10012 },
@@ -149,8 +145,129 @@ db.AtlasMaps = {
 		{ GREN.." 8') "..L["Andormu <Keepers of Time>"]..ALC["L-Parenthesis"]..ALC["Child"]..ALC["R-Parenthesis"], 10017 },
 		{ GREN..INDENT..L["Nozari <Keepers of Time>"]..ALC["L-Parenthesis"]..ALC["Child"]..ALC["R-Parenthesis"] },
 		{ GREN.." 9') "..L["Anachronos <Keepers of Time>"], 10018 },
-		{ GREN.."10') "..L["Andormu <Keepers of Time>"]..ALC["L-Parenthesis"]..ALC["Adult"]..ALC["R-Parenthesis"], 10019 },
-		{ GREN..INDENT..L["Nozari <Keepers of Time>"]..ALC["L-Parenthesis"]..ALC["Adult"]..ALC["R-Parenthesis"] },
+	},
+	CoTBlackMorass = {
+		ZoneName = { BZ["Caverns of Time"]..ALC["Colon"]..BZ["The Black Morass"] },
+		Location = { BZ["Tanaris"] },
+		LevelRange = "68-70",
+		MinLevel = "68",
+		PlayerLimit = { 5 },
+		Acronym = L["CoT2"],
+		WorldMapID = 273,
+		JournalInstanceID = 255,
+		Module = "Atlas_WrathoftheLichKing",
+		{ PURP..ALC["Event"]..ALC["Colon"]..BZ["Opening of the Dark Portal"] },
+		{ ORNG..ALC["Attunement Required"] },
+		{ ORNG..REPUTATION..ALC["Colon"]..BF["Keepers of Time"] },
+		{ BLUE.." A) "..ALC["Entrance"], 10001 },
+		{ GREN..INDENT..L["Sa'at <Keepers of Time>"] },
+		{ ORNG.." X) "..ALC["Portal"]..ALC["L-Parenthesis"]..ALC["Spawn Point"]..ALC["R-Parenthesis"], 10002 },
+		{ WHIT..INDENT..ALC["Wave 6"]..ALC["Colon"]..Atlas_GetBossName("Chrono Lord Deja", 552), 552 },
+		{ WHIT..INDENT..ALC["Wave 12"]..ALC["Colon"]..Atlas_GetBossName("Temporus", 553), 553 },
+		{ WHIT..INDENT..ALC["Wave 18"]..ALC["Colon"]..Atlas_GetBossName("Aeonus", 554), 554 },
+		{ GREN.." 1') "..BZ["The Dark Portal"], 10003 },
+		{ GREN..INDENT..Atlas_GetBossName("Medivh") },
+	},
+	CoTHyjal = {
+		ZoneName = { BZ["Caverns of Time"]..ALC["Colon"]..BZ["Hyjal Summit"] },
+		Location = { BZ["Tanaris"] },
+		LevelRange = "70+",
+		MinLevel = "70",
+		PlayerLimit = { 25 },
+		Acronym = L["CoT3"],
+		WorldMapID = 329,
+		JournalInstanceID = 750,
+		Module = "Atlas_WrathoftheLichKing",
+		{ PURP..ALC["Event"]..ALC["Colon"]..BZ["The Battle for Mount Hyjal"] },
+		{ ORNG..REPUTATION..ALC["Colon"]..BF["The Scale of the Sands"] },
+		{ BLUE.." A) "..BZ["Alliance Base"], 10001 },
+		{ GREN..INDENT..L["Lady Jaina Proudmoore"] },
+		{ BLUE.." B) "..BZ["Horde Encampment"], 10002 },
+		{ GREN..INDENT..L["Thrall <Warchief>"] },
+		{ BLUE.." C) "..BZ["Night Elf Village"], 10003 },
+		{ GREN..INDENT..L["Tyrande Whisperwind <High Priestess of Elune>"] },
+		{ WHIT.." 1) "..Atlas_GetBossName("Rage Winterchill", 1577), 1577 },
+		{ WHIT.." 2) "..Atlas_GetBossName("Anetheron", 1578), 1578 },
+		{ WHIT.." 3) "..Atlas_GetBossName("Kaz'rogal", 1579), 1579 },
+		{ WHIT.." 4) "..Atlas_GetBossName("Azgalor", 1580), 1580 },
+		{ WHIT.." 5) "..Atlas_GetBossName("Archimonde", 1581), 1581 },
+	},
+	CoTOldHillsbrad = {
+		ZoneName = { BZ["Caverns of Time"]..ALC["Colon"]..BZ["Old Hillsbrad Foothills"] },
+		Location = { BZ["Tanaris"] },
+		LevelRange = "66-70",
+		MinLevel = "66",
+		PlayerLimit = { 5 },
+		Acronym = L["CoT1"],
+		WorldMapID = 274,
+		JournalInstanceID = 251,
+		Module = "Atlas_WrathoftheLichKing",
+		{ PURP..ALC["Event"]..ALC["Colon"]..BZ["The Escape From Durnholde"] },
+		{ ORNG..ALC["Attunement Required"] },
+		{ ORNG..REPUTATION..ALC["Colon"]..BF["Keepers of Time"] },
+		{ BLUE.." A) "..ALC["Entrance"], 10001 },
+		{ GREN..INDENT..L["Erozion"] },
+		{ GREN..INDENT..L["Brazen"] },
+		{ BLUE.." B) "..L["Landing Spot"], 10002 },
+		{ BLUE.." C) "..BZ["Southshore"], 10003 },
+		{ BLUE.." D) "..BZ["Tarren Mill"], 10004 },
+		{ WHIT.." 1) "..Atlas_GetBossName("Lieutenant Drake", 538), 538 },
+		{ GREN.." 1') "..L["Thrall"]..ALC["L-Parenthesis"]..ALC["Lower"]..ALC["R-Parenthesis"], 10005 },
+		{ WHIT.." 2) "..Atlas_GetBossName("Captain Skarloc", 539), 539 },
+		{ GREN..INDENT..L["Thrall"]..ALC["L-Parenthesis"]..ALC["Second Stop"]..ALC["R-Parenthesis"] },
+		{ GREN.." 2') "..L["Thrall"]..ALC["L-Parenthesis"]..ALC["Third Stop"]..ALC["R-Parenthesis"], 10006 },
+		{ WHIT.." 3) "..Atlas_GetBossName("Epoch Hunter", 540), 540 },
+		{ GREN..INDENT..L["Thrall"]..ALC["L-Parenthesis"]..ALC["Fourth Stop"]..ALC["Comma"]..ALC["Upper"]..ALC["R-Parenthesis"] },
+		{ GREN..INDENT..L["Taretha"]..ALC["L-Parenthesis"]..ALC["Upper"]..ALC["R-Parenthesis"] },
+		{ WHIT.." 4) "..L["Don Carlos"]..ALC["L-Parenthesis"]..ALC["Wanders"]..ALC["R-Parenthesis"], 10007 },
+		{ WHIT..INDENT..INDENT..L["Guerrero"]..ALC["L-Parenthesis"]..ALC["Wanders"]..ALC["R-Parenthesis"] },
+		{ GREN..INDENT..L["Thomas Yance <Travelling Salesman>"]..ALC["L-Parenthesis"]..ALC["Wanders"]..ALC["R-Parenthesis"] },
+		{ GREN..INDENT..L["Aged Dalaran Wizard"]..ALC["L-Parenthesis"]..ALC["Wanders"]..ALC["R-Parenthesis"] },
+		{ GREN.." 3') "..L["Jonathan Revah"], 10008 },
+		{ GREN..INDENT..L["Jerry Carter"] },
+		{ "" },
+		{ "" },
+		{ "" },
+		{ ORNG..BZ["Southshore"] },
+		{ GREN..INDENT..Atlas_GetBossName("Kel'Thuzad") },
+		{ GREN..INDENT..L["Helcular"] },
+		{ GREN..INDENT..L["Farmer Kent"] },
+		{ GREN..INDENT..L["Sally Whitemane"] },
+		{ GREN..INDENT..L["Renault Mograine"] },
+		{ GREN..INDENT..L["Little Jimmy Vishas"] },
+		{ GREN..INDENT..L["Herod the Bully"] },
+		{ GREN..INDENT..L["Nat Pagle"] },
+		{ GREN..INDENT..L["Hal McAllister"] },
+		{ GREN..INDENT..L["Zixil <Aspiring Merchant>"] },
+		{ GREN..INDENT..L["Overwatch Mark 0 <Protector>"] },
+		{ "" },
+		{ ORNG..L["Southshore Inn"] },
+		{ GREN..INDENT..L["Captain Edward Hanes"] },
+		{ GREN..INDENT..L["Captain Sanders"] },
+		{ GREN..INDENT..L["Commander Mograine"] },
+		{ GREN..INDENT..L["Isillien"] },
+		{ GREN..INDENT..L["Abbendis"] },
+		{ GREN..INDENT..L["Fairbanks"] },
+		{ GREN..INDENT..Atlas_GetBossName("Tirion Fordring") },
+		{ GREN..INDENT..Atlas_GetBossName("Arcanist Doan") },
+		{ GREN..INDENT..L["Taelan"]..ALC["L-Parenthesis"]..ALC["Upper"]..ALC["R-Parenthesis"] },
+		{ GREN..INDENT..L["Barkeep Kelly <Bartender>"] },
+		{ GREN..INDENT..L["Frances Lin <Barmaid>"] },
+		{ GREN..INDENT..L["Chef Jessen <Speciality Meat & Slop>"] },
+		{ GREN..INDENT..L["Stalvan Mistmantle"]..ALC["L-Parenthesis"]..ALC["Upper"]..ALC["R-Parenthesis"] },
+		{ GREN..INDENT..L["Phin Odelic <The Kirin Tor>"]..ALC["L-Parenthesis"]..ALC["Upper"]..ALC["R-Parenthesis"] },
+		{ "" },
+		{ ORNG..BZ["Southshore Town Hall"] },
+		{ GREN..INDENT..L["Magistrate Henry Maleb"] },
+		{ GREN..INDENT..L["Raleigh the True"] },
+		{ GREN..INDENT..L["Nathanos Marris"] },
+		{ GREN..INDENT..L["Bilger the Straight-laced"] },
+		{ "" },
+		{ ORNG..BZ["Tarren Mill"] },
+		{ GREN..INDENT..L["Innkeeper Monica"] },
+		{ GREN..INDENT..L["Julie Honeywell"] },
+		{ GREN..INDENT..L["Jay Lemieux"] },
+		{ GREN..INDENT..L["Young Blanchy"] },
 	},
 	CoTOldStratholme = {
 		ZoneName = { BZ["Caverns of Time"]..ALC["Colon"]..BZ["The Culling of Stratholme"] },
@@ -649,7 +766,7 @@ db.AtlasMaps = {
 		{ "The Hundred Club (25 player)", "ac=2147" },
 		{ "Just Can't Get Enough (10 player)", "ac=2184" },
 		{ "Just Can't Get Enough (25 player)", "ac=2185" },
-		{ "Just Can't Get Enough - Guild Edition", "ac=5016" },
+		--{ "Just Can't Get Enough - Guild Edition", "ac=5016" },
 		{ "Atiesh, Greatstaff of the Guardian", "ac=425" },
 		{ "The Undying", "ac=2187" },
 		{ "The Immortal", "ac=2186" },
@@ -685,32 +802,8 @@ db.AtlasMaps = {
 		{ "Twilight Assist (25 player)", "ac=2052" },
 		{ "Twilight Duo (25 player)", "ac=2053" },
 		{ "The Twilight Zone (25 player)", "ac=2054" },
-		{ "The Twilight Zone - Guild Edition", "ac=5017" },
+		--{ "The Twilight Zone - Guild Edition", "ac=5017" },
 		{ "Realm First! Obsidian Slayer", "ac=456" },
-	},
-	OnyxiasLair = {
-		ZoneName = { BZ["Onyxia's Lair"] },
-		Location = { BZ["Dustwallow Marsh"] },
-		DungeonID = 46,
-		DungeonHeroicID = 257,
-		Acronym = L["Ony"],
-		PlayerLimit = { 10, 25 },
-		WorldMapID = 248,
-		JournalInstanceID = 760,
-		Module = "Atlas_WrathoftheLichKing",
-		{ BLUE.." A) "..ALC["Entrance"], 10001 },
-		{ WHIT.." 1) "..Atlas_GetBossName("Onyxia", 1651), 1651 },
-		{ "" },
-		{ LBLU..ACHIEVEMENTS..ALC["Colon"] },
-		{ "More Dots! (10 player)", "ac=4402" },
-		{ "More Dots! (25 player)", "ac=4405" },
-		{ "Many Whelps! Handle It! (10 player)", "ac=4403" },
-		{ "Many Whelps! Handle It! (25 player)", "ac=4406" },
-		{ "She Deep Breaths More (10 player)", "ac=4404" },
-		{ "She Deep Breaths More (25 player)", "ac=4407" },
-		{ "Onyxia's Lair (Level 60)", "ac=684" },
-		{ "Onyxia's Lair (10 player)", "ac=4396" },
-		{ "Onyxia's Lair (25 player)", "ac=4397" },
 	},
 	RubySanctum = {
 		ZoneName = { BZ["Wyrmrest Temple"]..ALC["Colon"]..BZ["The Ruby Sanctum"] },
@@ -732,7 +825,7 @@ db.AtlasMaps = {
 		{ LBLU..ACHIEVEMENTS..ALC["Colon"] },
 		{ "The Twilight Destroyer (10 player)", "ac=4817" },
 		{ "The Twilight Destroyer (25 player)", "ac=4815" },
-		{ "The Twilight Destroyer - Guild Edition", "ac=5022" },
+		--{ "The Twilight Destroyer - Guild Edition", "ac=5022" },
 		{ "Heroic: The Twilight Destroyer (10 player)", "ac=4818" },
 		{ "Heroic: The Twilight Destroyer (25 player)", "ac=4816" },
 	},
@@ -758,7 +851,7 @@ db.AtlasMaps = {
 		{ "A Poke in the Eye (25 player)", "ac=1870" },
 		{ "Denyin' the Scion (10 player)", "ac=2148" },
 		{ "Denyin' the Scion (25 player)", "ac=2149" },
-		{ "You Don't Have an Eternity - Guild Edition", "ac=5018" },
+		--{ "You Don't Have an Eternity - Guild Edition", "ac=5018" },
 		{ "Realm First! Magic Seeker", "ac=1400" },
 	},
 	TheNexus = {
@@ -1617,16 +1710,12 @@ db.AtlasMaps_NPC_DB = {
 		{ "C", 10003, 468, 444 },
 		{ "1'", 10004, 90, 345 },		
 	},
-	CavernsOfTimeEnt = {
+	WL_CoTEnt = {
 		{ "A", 10001, 405, 170 }, -- Entrance
 		{ "B", 10002, 140, 79 }, -- Hyjal Summit
 		{ "C", 10003, 18, 156 }, -- Old Hillsbrad Foothills
 		{ "D", 10004, 65, 442 }, -- The Black Morass
 		{ "E", 10005, 263, 411 }, -- The Culling of Stratholme
-		{ "F", 10006, 291, 170 }, -- Dragon Soul
-		{ "G", 10007, 261, 201 }, -- End Time
-		{ "H", 10008, 28, 298 }, -- Well of Eternity
-		{ "I", 10009, 329, 210 }, -- Hour of Twilight
 		{ "1'", 10010, 426, 170 }, -- Steward of Time <Keepers of Time>
 		{ "2'", 10011, 461, 159 }, -- Alexston Chrome <Tavern of Time>
 		{ "3'", 10012, 355, 148 }, -- Graveyard
@@ -1636,7 +1725,6 @@ db.AtlasMaps_NPC_DB = {
 		{ "7'", 10016, 198, 157 }, -- Moonwell
 		{ "8'", 10017, 161, 216 }, -- Andormu <Keepers of Time>
 		{ "9'", 10018, 146, 263 }, -- Anachronos <Keepers of Time>
-		{ "10'", 10019, 115, 317 }, -- Andormu <Keepers of Time>
 	},
 	CoTOldStratholme = {
 		{ 3, 613, 312, 80 }, -- Chrono-Lord Epoch
@@ -1782,10 +1870,6 @@ db.AtlasMaps_NPC_DB = {
 		{ "2", 10003, 254, 189 },
 		{ "3", 10004, 250, 301 },
 		{ 4, 1616, 255, 241 },
-	},
-	OnyxiasLair = {
-		{ "A", 10001, 48, 54 },
-		{ 1, 1651, 332, 104 },
 	},
 	RubySanctum = {
 		{ "A", 10001, 241, 190 }, 
@@ -2059,7 +2143,7 @@ db.SubZoneData = {
 	Not for localization.
 ]]
 db.OutdoorZoneToAtlas = {
-	[BZ["Tanaris"]] = 			"CavernsOfTimeEnt",	-- Burning Crusade, WoLTK, Catalysm
+	[BZ["Tanaris"]] = 			"WL_CoTEnt",	-- Burning Crusade, WoLTK, Catalysm
 	[BZ["Icecrown"]] = 			"IcecrownEnt",
 	[BZ["Dragonblight"]] = 			"RubySanctum",
 	[BZ["Borean Tundra"]] = 		"TheEyeOfEternity",
@@ -2072,14 +2156,17 @@ db.OutdoorZoneToAtlas = {
 
 -- Entrance maps to instance maps
 db.EntToInstMatches = {
-	["CavernsOfTimeEnt"] =			{"CoTOldStratholme"},
+	["WL_CoTEnt"] = 			{"CoTBlackMorass","CoTHyjal","CoTOldHillsbrad","CoTOldStratholme"},
 	["IcecrownEnt"] =			{"FHHallsOfReflection", "FHPitOfSaron", "FHTheForgeOfSouls", "IcecrownCitadelA", "IcecrownCitadelB", "IcecrownCitadelC"},
 	["UlduarEnt"] = 			{"UlduarHallsofStone", "UlduarHallsofLightning", "UlduarA", "UlduarB", "UlduarC", "UlduarD", "UlduarE"},
 }
 
 -- Instance maps to entrance maps
 db.InstToEntMatches = {
-	["CoTOldStratholme"] =			{"CavernsOfTimeEnt"},
+	["CoTBlackMorass"] =			{"WL_CoTEnt"},
+	["CoTHyjal"] =					{"WL_CoTEnt"},
+	["CoTOldHillsbrad"] =			{"WL_CoTEnt"},
+	["CoTOldStratholme"] =			{"WL_CoTEnt"},
 	["FHHallsOfReflection"] =		{"IcecrownEnt"},
 	["FHPitOfSaron"] =			{"IcecrownEnt"},
 	["FHTheForgeOfSouls"] =			{"IcecrownEnt"},
@@ -2123,9 +2210,11 @@ db.DropDownLayouts_Order = {
 db.DropDownLayouts = {
 	[ATLAS_DDL_CONTINENT] = {
 		[ATLAS_DDL_CONTINENT_KALIMDOR] = {
-			"CavernsOfTimeEnt",		-- Burning Crusade, WoLTK, Catalysm
+			"WL_CoTEnt",
+			"CoTBlackMorass",
+			"CoTHyjal",
+			"CoTOldHillsbrad",
 			"CoTOldStratholme",
-			"OnyxiasLair",			-- WrathoftheLichKing
 		},
 		[ATLAS_DDL_CONTINENT_NORTHREND] = {
 			"AhnKahet",
@@ -2165,7 +2254,7 @@ db.DropDownLayouts = {
 		[ATLAS_DDL_EXPANSION_WOTLK] = {
 			"AhnKahet",
 			"AzjolNerub",
-			"CavernsOfTimeEnt",
+			"WL_CoTEnt",
 			"CoTOldStratholme",
 			"DrakTharonKeep",
 			"FHHallsOfReflection",
@@ -2178,7 +2267,6 @@ db.DropDownLayouts = {
 			"IcecrownEnt",
 			"Naxxramas",
 			"ObsidianSanctum",
-			"OnyxiasLair",
 			"RubySanctum",
 			"TheEyeOfEternity",
 			"TheNexus",
@@ -2200,10 +2288,10 @@ db.DropDownLayouts = {
 		},
 	},
 	[ATLAS_DDL_LEVEL] = {
-		[ATLAS_DDL_LEVEL_10TO30] = {
+		[ATLAS_DDL_LEVEL_70TO80] = {
 			"AhnKahet",			-- WrathoftheLichKing
 			"AzjolNerub",			-- WrathoftheLichKing
-			"CavernsOfTimeEnt",		
+			"WL_CoTEnt",		
 			"CoTOldStratholme",		-- WrathoftheLichKing
 			"DrakTharonKeep",		-- WrathoftheLichKing
 			"FHHallsOfReflection",		-- WrathoftheLichKing
@@ -2230,7 +2318,6 @@ db.DropDownLayouts = {
 			"IcecrownEnt",			-- WrathoftheLichKing
 			"Naxxramas",			-- WrathoftheLichKing
 			"ObsidianSanctum",		-- WrathoftheLichKing
-			"OnyxiasLair",			-- WrathoftheLichKing
 			"RubySanctum",			-- WrathoftheLichKing
 			"TheEyeOfEternity",		-- WrathoftheLichKing
 			"TrialOfTheCrusader",		-- WrathoftheLichKing
@@ -2246,7 +2333,10 @@ db.DropDownLayouts = {
 		[ATLAS_DDL_PARTYSIZE_5] = {
 			"AhnKahet",			-- WrathoftheLichKing
 			"AzjolNerub",			-- WrathoftheLichKing
-			"CavernsOfTimeEnt",		-- WrathoftheLichKing
+			"WL_CoTEnt",		-- WrathoftheLichKing
+			"CoTBlackMorass",
+			"CoTHyjal",
+			"CoTOldHillsbrad",
 			"CoTOldStratholme",		-- WrathoftheLichKing
 			"DrakTharonKeep",		-- WrathoftheLichKing
 			"FHHallsOfReflection",		-- WrathoftheLichKing
@@ -2272,7 +2362,6 @@ db.DropDownLayouts = {
 			"IcecrownEnt",			-- WrathoftheLichKing
 			"Naxxramas",			-- WrathoftheLichKing
 			"ObsidianSanctum",		-- WrathoftheLichKing
-			"OnyxiasLair",			-- WrathoftheLichKing
 			"RubySanctum",			-- WrathoftheLichKing
 			"TrialOfTheCrusader",		-- WrathoftheLichKing
 			"UlduarA",			-- WrathoftheLichKing
@@ -2290,7 +2379,6 @@ db.DropDownLayouts = {
 			"IcecrownEnt",			-- WrathoftheLichKing
 			"Naxxramas",			-- WrathoftheLichKing
 			"ObsidianSanctum",		-- WrathoftheLichKing
-			"OnyxiasLair",			-- WrathoftheLichKing
 			"RubySanctum",			-- WrathoftheLichKing
 			"TrialOfTheCrusader",		-- WrathoftheLichKing
 			"UlduarA",			-- WrathoftheLichKing
@@ -2305,7 +2393,10 @@ db.DropDownLayouts = {
 		[ATLAS_DDL_TYPE_INSTANCE] = {
 			"AhnKahet",			-- WrathoftheLichKing
 			"AzjolNerub",			-- WrathoftheLichKing
-			"CoTOldStratholme",		-- WrathoftheLichKing
+			"CoTBlackMorass",
+			"CoTHyjal",
+			"CoTOldHillsbrad",
+			"CoTOldStratholme",
 			"DrakTharonKeep",		-- WrathoftheLichKing
 			"TheEyeOfEternity",		-- WrathoftheLichKing
 			"FHHallsOfReflection",		-- WrathoftheLichKing
@@ -2317,7 +2408,6 @@ db.DropDownLayouts = {
 			"IcecrownCitadelC",		-- WrathoftheLichKing
 			"Naxxramas",			-- WrathoftheLichKing
 			"ObsidianSanctum",		-- WrathoftheLichKing
-			"OnyxiasLair",			-- WrathoftheLichKing
 			"RubySanctum",			-- WrathoftheLichKing
 			"TheNexus",			-- WrathoftheLichKing
 			"TheOculus",			-- WrathoftheLichKing
@@ -2336,7 +2426,7 @@ db.DropDownLayouts = {
 			"VioletHold",			-- WrathoftheLichKing
 		},
 		[ATLAS_DDL_TYPE_ENTRANCE] = {
-			"CavernsOfTimeEnt",		-- WrathoftheLichKing
+			"WL_CoTEnt",		-- WrathoftheLichKing
 			"IcecrownEnt",			-- WrathoftheLichKing
 			"UlduarEnt",			-- WrathoftheLichKing
 		},
