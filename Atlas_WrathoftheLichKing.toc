@@ -23,23 +23,26 @@
 ## Notes-zhTW: 適用於 Atlas 的巫妖王之怒副本地圖
 ## Version: @project-version@
 ## Author: arith
-## X-Date: @project-date-iso@
-## X-Credits: Dan Gilbert, Lothaer, Dynaletik, dubcat
-## Category: Map & Minimap
-## Category-zhTW: 地圖與小地圖
-## Category-zhCN: 地图与小地图
-## Category-deDE: Karte & Minimap
-## Category-esES: Mapa y minimapa
-## Category-esMX: Mapa y minimapa
-## Category-frFR: Carte & Minimap
-## Category-itIT: Mappa e Minimappa
-## Category-koKR: 지도 및 미니맵
-## Category-ptBR: Mapa e Minimapa
-## Category-ruRU: Карта и миникарта
-## X-Category: Map
-## RequiredDeps: Atlas
 ## IconTexture: Interface\WorldMap\WorldMap-Icon
+## RequiredDeps: Atlas
+## Category: Map
+## Category-deDE: Karte
+## Category-esES: Mapa
+## Category-esMX: Mapa
+## Category-frFR: Carte
+## Category-itIT: Mappa
+## Category-koKR: 지도
+## Category-ptBR: Mapa
+## Category-ruRU: Карта
+## Category-zhCN: 地图
+## Category-zhTW: 地圖
+## X-Category: Map
+## X-Credits: Dan Gilbert, Lothaer, Dynaletik, dubcat
+## X-Date: @project-date-iso@
+## X-Website: https://www.curseforge.com/wow/addons/atlas-wrathofthelichking
+## X-Curse-Project-ID: 33668
+## X-WoWI-ID: 20514
 
 Locale\Locales.xml
 Core\Core.lua
-Core\Data.xml
+Data\Data.xml
