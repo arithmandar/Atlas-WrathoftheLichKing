@@ -1,4 +1,4 @@
-﻿## Interface: 50504, 120100
+﻿## Interface: 50504, 120105
 ## Title: Atlas Wrath of the Lich King
 ## Notes: Wrath of the Lich King instance maps for Atlas
 ## Title-deDE: Atlas: Wrath of the Lich King
